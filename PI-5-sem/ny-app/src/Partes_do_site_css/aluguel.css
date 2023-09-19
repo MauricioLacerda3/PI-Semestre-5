@@ -1,0 +1,47 @@
+.pagamento
+{
+    margin-top: 5%;
+}
+
+
+fieldset
+{
+    border: none;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 60%;
+    position: relative;
+    z-index: 0;
+}
+
+fieldset button 
+{
+    background-color: var(--cor-padrao);
+    border: 1 solid white;
+    border-radius: 5px;
+    color: white;
+    width: 224px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+fieldset input[type = "submit"]
+{
+    background-color: white;
+    color: var(--cor-padrao);
+    border-color: var(--cor-padrao);
+    padding: 20px;
+    margin: 5%;
+}
+
+fieldset input[type = "submit"]:hover
+{
+    cursor: pointer;
+}
+
+
+p img
+{
+    width: 3%;
+}

@@ -1,0 +1,316 @@
+.filtros
+{
+    display: grid;
+    grid-template-columns: repeat(2, 20px);
+    justify-content: space-evenly;
+    margin-right: 50%;
+}
+
+.filtros input
+{
+    accent-color: var(--cor-padrao);
+    cursor: pointer;
+}
+
+.filtros label
+{
+    margin: 30%;
+}
+
+.row
+{
+    margin-left: 15%;
+    padding: 0 20px;
+    display: table;
+    width: 100%;
+}
+
+.lista-produto
+{
+    margin-left: 50px;
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+}
+
+.produto 
+{
+    width: 300px;
+    display: block;
+    background-color: white;
+    box-shadow: 0 4px 8px #999;
+    border-radius: 10px;
+    margin: 30px;
+    text-align: center;
+}
+
+.produto img
+{
+    padding: 10%;
+    width: 100%;
+}
+
+
+.produto button
+{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid var(--cor-padrao);
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    color: var(--cor-padrao);
+    font-weight: bold;
+}
+
+
+.produto button:hover
+{
+    background-color: var(--cor-padrao);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+.produto h3
+{
+    font-size: 1.5em;
+    margin: 0px;
+    font-weight: lighter;
+}
+
+.produto p
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 20px 0px 35px 0;
+    color: var(--cor-padrao);
+}
+
+
+#foto-produto-grande
+{
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .row
+    {
+        padding: 0px;
+        margin-left: 3%;
+    }
+    .produto
+    {
+        width: 60%;
+    }
+
+    .lista-produto
+    {
+        grid-template-columns: repeat(3, 300px);
+        margin-left: 0%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .row
+    {
+        padding: 0px;
+        margin: 0%;
+    }
+    .lista-produto
+    {
+        grid-template-columns: repeat(3, 135px);
+        margin-left: 0%;
+        padding: 0;
+    }
+    .produto
+    {
+        width: 60%;
+    }
+
+
+    .produto h3
+    {
+        font-size: 0.8em;
+    }
+
+    .produto p
+    {
+        font-size: 0.6em;
+        margin: 10px 0px 17px 0;
+    }
+
+    .produto img
+    {
+        width: 100%;
+    }
+
+    .produto button
+    {
+        margin: 5px;
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 400px)
+{
+    .row
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    .lista-produto
+    {
+        grid-template-columns: repeat(3, 110px);
+        margin-left: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .produto
+    {
+        width: 60%;
+    }
+
+
+    .produto h3
+    {
+        font-size: 0.8em;
+    }
+
+    .produto p
+    {
+        font-size: 0.6em;
+        margin: 10px 0px 17px 0;
+    }
+
+    .produto img
+    {
+        width: 100%;
+    }
+
+    .produto button
+    {
+        margin: 5px;
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    .row
+    {
+        padding: 0px;
+        margin-left: 3%;
+    }
+    .produto
+    {
+        width: 60%;
+    }
+
+    .lista-produto
+    {
+        grid-template-columns: repeat(3, 300px);
+        margin-left: 0%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .row
+    {
+        padding: 0px;
+        margin: 0%;
+    }
+    .lista-produto
+    {
+        grid-template-columns: repeat(3, 135px);
+        margin-left: 0%;
+        padding: 0;
+    }
+    .produto
+    {
+        width: 60%;
+    }
+
+
+    .produto h3
+    {
+        font-size: 0.8em;
+    }
+
+    .produto p
+    {
+        font-size: 0.6em;
+        margin: 10px 0px 17px 0;
+    }
+
+    .produto img
+    {
+        width: 100%;
+    }
+
+    .produto button
+    {
+        margin: 5px;
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 400px)
+{
+    .row
+    {
+        padding: 0px;
+        margin: 0%;
+    }
+    .lista-produto
+    {
+        grid-template-columns: repeat(3, 135px);
+        margin-left: 0%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .produto
+    {
+        width: 60%;
+    }
+
+
+    .produto h3
+    {
+        font-size: 0.8em;
+    }
+
+    .produto p
+    {
+        font-size: 0.6em;
+        margin: 10px 0px 17px 0;
+    }
+
+    .produto img
+    {
+        width: 100%;
+    }
+
+    .produto button
+    {
+        margin: 5px;
+        padding: 5px;
+        font-size: 10px;
+    }
+}

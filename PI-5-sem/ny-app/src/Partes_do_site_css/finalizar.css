@@ -1,0 +1,90 @@
+
+fieldset {
+    background-color: white;
+    border: 1 solid var(--cor-padrao);
+    margin-top: 20px;
+    margin-left: 10%;
+    padding: 10px;
+    width: 70%;
+}
+
+fieldset > div {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label span {
+    color: red;
+}
+
+input, select {
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+    width: 200px;
+}
+
+select {
+    background: transparent;
+    box-shadow: none;
+    color: #666;
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+.select-wrapper {
+    position: relative;
+    width: 222px;
+}
+
+.select-wrapper::after {
+    content: '< >';
+    color: #666;
+    font-size: 18px;
+    top: 8px;
+    right: 0;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: -1;
+}
+
+.input-simples input {
+    width: 439px;
+}
+
+.input-duplo {
+    display: flex;
+}
+
+.input-duplo > div {
+    margin-right: 15px;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+.radio input {
+    float: left;
+    margin-right: 10px;
+    width: auto;
+}
+
+
+button {
+    background-color: var(--cor-padrao);
+    border: 1 solid var(--cor-padrao);
+    border-radius: 5px;
+    color: white;
+    width: 224px;
+    padding: 10px;
+    text-transform: uppercase;
+}

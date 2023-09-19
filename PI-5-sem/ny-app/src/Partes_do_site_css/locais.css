@@ -1,0 +1,150 @@
+body h2
+{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.lojas
+{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-content:space-around;
+}
+
+
+.lojas ul
+{
+    list-style-type: none;
+    margin-left: 20%;
+}
+
+.lojas iframe
+{
+    width: 900px;
+    height: 80%;
+    margin-top: 10%;
+}
+
+.lojas li
+{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5%;
+    padding: 5%;
+}
+
+.lojas button
+{
+    color: var(--cor-padrao);
+    border-color: var(--cor-padrao);
+    border-radius: 5px;
+    padding: 5%;
+    margin-left: 5%;
+}
+
+.lojas button:hover
+{
+    color: white;
+    border-color: white;
+    background-color: var(--cor-padrao);
+}
+
+
+@media screen and (max-width: 1500px)
+{
+    .lojas iframe 
+    {
+        width: 650px;
+        height: 65%;
+        margin-top: 10%;
+    }
+}
+
+
+@media screen and (max-width: 1020px)
+{
+    .lojas
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 0%;
+        
+    }
+
+    .lojas iframe 
+    {
+        width: 100%;
+        height: 500px;
+        
+    }
+
+    .lojas ul 
+    {
+        width: 100%;
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: repeat(5, 350px);
+        text-align: center;
+        margin-top: 10%;
+        overflow-x: scroll;
+    }
+
+    .lojas li
+    {
+        width: 80%;
+        margin: 5%;
+        padding: 10%;
+        text-align: center;
+
+    }
+    
+    .lojas li h2
+    {
+        font-size: 15px;
+    }
+
+    .lojas li button
+    {
+        padding: 5%;
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .lojas
+    {
+        text-align: center;
+    }
+    .lojas iframe 
+    {
+        height: 400px;
+        margin-top: 10%;
+    }
+
+    .lojas ul 
+    {
+        margin-left: 0%;
+        display: grid;
+        grid-template-columns: repeat(5, 100px);
+        text-align: center;
+        overflow-x: scroll;
+    }
+
+    .lojas li h2
+    {
+        font-size: 12px;
+    }
+
+    .lojas li button
+    {
+        padding: 3%;
+        font-size: 12px;
+    }
+
+}
